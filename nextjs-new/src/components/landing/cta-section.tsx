@@ -13,7 +13,6 @@ import {
 import { Marquee } from "@/components/magic/marquee";
 import { CtaCard } from "./cta-card";
 import { Button } from "@/components/ui/button";
-import { useMemo } from "react";
 
 interface Tile {
   icon: LucideIcon;
@@ -47,20 +46,13 @@ const tiles: Tile[] = [
   },
 ];
 
-function shuffleArray<T>(array: T[]): T[] {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
+// Pre-shuffled arrays to avoid hydration mismatch
+const tiles1 = [tiles[2], tiles[0], tiles[4], tiles[1], tiles[5], tiles[3]];
+const tiles2 = [tiles[5], tiles[3], tiles[1], tiles[4], tiles[0], tiles[2]];
+const tiles3 = [tiles[1], tiles[4], tiles[0], tiles[3], tiles[2], tiles[5]];
+const tiles4 = [tiles[3], tiles[2], tiles[5], tiles[0], tiles[4], tiles[1]];
 
 export function CtaSection() {
-  const randomTiles1 = useMemo(() => shuffleArray(tiles), []);
-  const randomTiles2 = useMemo(() => shuffleArray(tiles), []);
-  const randomTiles3 = useMemo(() => shuffleArray(tiles), []);
-  const randomTiles4 = useMemo(() => shuffleArray(tiles), []);
 
   return (
     <section id="cta">
@@ -68,7 +60,7 @@ export function CtaSection() {
         <div className="flex w-full flex-col items-center justify-center">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
             <Marquee reverse className="-delay-[200ms] [--duration:10s]" repeat={5}>
-              {randomTiles1.map((tile, idx) => (
+              {tiles1.map((tile, idx) => (
                 <CtaCard key={`row1-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
@@ -76,7 +68,7 @@ export function CtaSection() {
               ))}
             </Marquee>
             <Marquee reverse className="[--duration:25s]" repeat={5}>
-              {randomTiles2.map((tile, idx) => (
+              {tiles2.map((tile, idx) => (
                 <CtaCard key={`row2-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
@@ -84,7 +76,7 @@ export function CtaSection() {
               ))}
             </Marquee>
             <Marquee reverse className="-delay-[200ms] [--duration:20s]" repeat={5}>
-              {randomTiles1.map((tile, idx) => (
+              {tiles1.map((tile, idx) => (
                 <CtaCard key={`row3-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
@@ -92,7 +84,7 @@ export function CtaSection() {
               ))}
             </Marquee>
             <Marquee reverse className="[--duration:30s]" repeat={5}>
-              {randomTiles2.map((tile, idx) => (
+              {tiles2.map((tile, idx) => (
                 <CtaCard key={`row4-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
@@ -100,7 +92,7 @@ export function CtaSection() {
               ))}
             </Marquee>
             <Marquee reverse className="-delay-[200ms] [--duration:20s]" repeat={5}>
-              {randomTiles3.map((tile, idx) => (
+              {tiles3.map((tile, idx) => (
                 <CtaCard key={`row5-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
@@ -108,7 +100,7 @@ export function CtaSection() {
               ))}
             </Marquee>
             <Marquee reverse className="[--duration:30s]" repeat={5}>
-              {randomTiles4.map((tile, idx) => (
+              {tiles4.map((tile, idx) => (
                 <CtaCard key={`row6-${idx}`}>
                   <tile.icon className="size-full" />
                   <div className={tile.bg} />
