@@ -10,10 +10,11 @@ import { ContactSection } from "@/components/landing/contact-section";
 import { CtaSection } from "@/components/landing/cta-section";
 
 export const metadata = {
-  title: "Svee UI - Next.js Startup Template",
+  title: "WebCors - Premier Web Development & Digital Services",
   description:
-    "Next.js Startup Template is a template for building Startup Applications. Built with Next.js, TailwindCSS, and Framer Motion.",
-  keywords: "nextjs, tailwindcss, framer-motion, startup, template",
+    "WebCors is a leading service-based company specializing in high-performance web development, mobile apps, and digital transformation solutions.",
+  keywords:
+    "webcors, web development, software agency, digital services, nextjs, react, mobile apps",
 };
 
 export default function Home() {

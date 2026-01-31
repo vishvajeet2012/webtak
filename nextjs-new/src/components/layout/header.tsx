@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { MagicButton } from "@/components/ui/magic-button";
 import Link from "next/link";
 import { MobileMenu } from "./mobile-menu";
 
@@ -13,32 +13,36 @@ const menuItems = [
 export function Header() {
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 w-full -translate-y-4 animate-fade-in border-b opacity-0 backdrop-blur-md">
-        <div className="container flex h-14 items-center justify-between">
-          <Link className="text-md flex items-center font-semibold" href="/">
-            Svee UI
+      <header className="fixed left-0 top-0 z-50 w-full animate-fade-in border-b border-transparent bg-background/5 backdrop-blur-md transition-all duration-300 hover:bg-background/80">
+        <div className="container flex h-16 items-center justify-between">
+          <Link
+            className="flex items-center gap-2 text-xl font-bold tracking-tight"
+            href="/"
+          >
+            WebCors
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex md:items-center md:gap-6 ml-10">
+          <nav className="hidden md:flex md:items-center md:gap-8 ml-8">
             {menuItems.map((item) => (
               <Link
                 key={item.id}
                 href={item.href}
-                className="text-sm text-gray-400 transition-colors hover:text-white"
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          <div className="ml-auto flex h-full items-center">
-            <Link className="mr-6 text-sm" href="/signin">
+          <div className="ml-auto flex h-full items-center gap-4">
+            <Link
+              className="text-sm font-medium text-muted-foreground hover:text-foreground hidden sm:block"
+              href="/signin"
+            >
               Log in
             </Link>
-            <Button variant="secondary" className="mr-6 text-sm" href="/signup">
-              Sign up
-            </Button>
+            <MagicButton href="/contact">Book a Call</MagicButton>
           </div>
 
           {/* Mobile Menu - Client Component */}

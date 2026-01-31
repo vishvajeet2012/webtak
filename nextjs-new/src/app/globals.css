@@ -106,6 +106,16 @@
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
   --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
   --animate-image-glow: image-glow 4100ms 600ms ease-out forwards;
+  --animate-gradient-flow: gradient-flow 3s linear infinite;
+
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
 
   @keyframes fade-in {
     from {

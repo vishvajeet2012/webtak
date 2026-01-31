@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import { AnimatedShinyText } from "@/components/magic/animated-shiny-text";
 import { Button } from "@/components/ui/button";
+import { MagicButton } from "@/components/ui/magic-button";
 import { HeroImage } from "./hero-image";
 
 export function HeroSection() {
@@ -24,13 +25,7 @@ export function HeroSection() {
         presence.
       </p>
       <div className="-translate-y-4 animate-fade-in flex items-center justify-center gap-4 opacity-0 [--animation-delay:600ms]">
-        <Button
-          className="gap-1 rounded-lg text-white dark:text-black"
-          href="/contact"
-        >
-          <span>Book a Call</span>
-          <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-        </Button>
+        <MagicButton href="/contact">Book a Call</MagicButton>
         <Button variant="outline" className="gap-1 rounded-lg" href="/about">
           <span>Learn More</span>
         </Button>
