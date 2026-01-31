@@ -46,7 +46,8 @@ const productPrices = [
   {
     id: "price_5",
     name: "Enterprise",
-    description: "An enterprise plan with advanced features for large organizations",
+    description:
+      "An enterprise plan with advanced features for large organizations",
     features: [
       "Custom AI solutions",
       "24/7 dedicated support",
@@ -103,16 +104,18 @@ export function PricingSection() {
           </h2>
 
           <p className="mt-6 text-xl leading-8 text-black/80 dark:text-white">
-            Choose an <strong>affordable plan</strong> that&apos;s packed with the
-            best features for engaging your audience, creating customer loyalty,
-            and driving sales.
+            Choose an <strong>affordable plan</strong> that&apos;s packed with
+            the best features for engaging your audience, creating customer
+            loyalty, and driving sales.
           </p>
         </div>
 
         <div className="flex w-full items-center justify-center space-x-2">
           <Switch
             id="interval"
-            onCheckedChange={(checked) => setInterval(checked ? "year" : "month")}
+            onCheckedChange={(checked) =>
+              setInterval(checked ? "year" : "month")
+            }
           />
           <span>Annual</span>
           <span className="inline-block whitespace-nowrap rounded-full bg-black px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white dark:bg-white dark:text-black">
@@ -129,7 +132,7 @@ export function PricingSection() {
                 {
                   "border-2 border-[var(--color-one)] dark:border-[var(--color-one)]":
                     price.isMostPopular,
-                }
+                },
               )}
             >
               <div className="flex items-center">
@@ -163,7 +166,7 @@ export function PricingSection() {
               <Button
                 className={cn(
                   "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-                  "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2"
+                  "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
                 )}
                 disabled={isLoading}
                 onClick={() => onSubscribeClick(price.id)}

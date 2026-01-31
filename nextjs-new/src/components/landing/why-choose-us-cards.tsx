@@ -2,56 +2,56 @@
 
 import { cn } from "@/lib/utils";
 import {
+  Sparkles,
+  Search,
+  Smartphone,
   Zap,
-  Shield,
-  Users,
-  Clock,
-  HeartHandshake,
-  Rocket,
+  Accessibility,
+  HeadphonesIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
+    icon: Sparkles,
+    title: "Minimal Design",
     description:
-      "Built with performance in mind. Our solutions are optimized for speed and efficiency.",
-    gradient: "from-yellow-400 via-orange-500 to-red-500",
+      "Clean aesthetics that put your content in the spotlight. We eliminate unnecessary elements to create a focused user experience with intentional whitespace and balanced typography.",
+    gradient: "from-slate-400 via-gray-500 to-zinc-600",
   },
   {
-    icon: Shield,
-    title: "Secure & Reliable",
+    icon: Search,
+    title: "SEO Optimized",
     description:
-      "Enterprise-grade security with 99.9% uptime guarantee. Your data is always protected.",
+      "Built to help your site rank higher in search results. We implement semantic HTML, optimized metadata, clean URLs, and performance optimization for better visibility.",
     gradient: "from-green-400 via-emerald-500 to-teal-500",
   },
   {
-    icon: Users,
-    title: "Customer First",
+    icon: Smartphone,
+    title: "Responsive",
     description:
-      "24/7 dedicated support team ready to help you succeed. We're here for you always.",
+      "Flawless experiences across all devices and screen sizes. We use flexible layouts, fluid grids, and media queries for seamless desktop, tablet, and mobile experiences.",
     gradient: "from-blue-400 via-indigo-500 to-purple-500",
   },
   {
-    icon: Clock,
-    title: "Time Saving",
+    icon: Zap,
+    title: "Fast Performance",
     description:
-      "Automate repetitive tasks and focus on what matters most. Save hours every week.",
-    gradient: "from-pink-400 via-rose-500 to-red-500",
+      "Lightning-quick load times for smooth user interactions. We optimize images, leverage caching, minimize HTTP requests, and implement code splitting for speed.",
+    gradient: "from-yellow-400 via-orange-500 to-red-500",
   },
   {
-    icon: HeartHandshake,
-    title: "Trusted Partner",
+    icon: Accessibility,
+    title: "Accessibility",
     description:
-      "Trusted by 10,000+ companies worldwide. Join our growing community of success.",
+      "Inclusive design practices for all users. Our designs follow WCAG guidelines with proper contrast, keyboard navigation, and screen reader compatibility.",
     gradient: "from-violet-400 via-purple-500 to-indigo-500",
   },
   {
-    icon: Rocket,
-    title: "Scale Easily",
+    icon: HeadphonesIcon,
+    title: "Modern Technology",
     description:
-      "From startup to enterprise, our platform grows with your business needs.",
+      "Built with the latest frameworks and technologies. We use Next.js, React, TypeScript, and modern tools to create future-proof websites that stay ahead of the curve.",
     gradient: "from-cyan-400 via-blue-500 to-indigo-500",
   },
 ];
@@ -120,7 +120,7 @@ export function WhyChooseUsCards() {
           <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
             {feature.title}
           </h4>
-          <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 text-justify">
             {feature.description}
           </p>
 
