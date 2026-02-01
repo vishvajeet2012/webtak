@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { DevlixLogo } from "@/components/ui/devlix-logo";
+
 const footerNavs = [
   {
     label: "Product",
@@ -39,26 +41,7 @@ export function Footer() {
         <div className="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-floor-plan size-8"
-              >
-                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5" />
-                <path d="M9 3v7" />
-                <path d="M21 10h-7" />
-                <path d="M3 15h9" />
-              </svg>
-              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-                Svee UI
-              </span>
+              <DevlixLogo />
             </Link>
             <p className="max-w-xs">UI Library for Design Engineers</p>
           </div>
@@ -107,7 +90,7 @@ export function Footer() {
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <Link href="/" className="cursor-pointer">
-              Svee UI
+              Devlix
             </Link>
             . All Rights Reserved.
           </span>

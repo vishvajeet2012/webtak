@@ -5,6 +5,8 @@ import { AlignJustify, XIcon } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
+import { DevlixLogo } from "@/components/ui/devlix-logo";
+
 const menuItems = [
   { id: 1, label: "Features", href: "#" },
   { id: 2, label: "Pricing", href: "#pricing" },
@@ -47,8 +49,8 @@ export function MobileMenu() {
         {isOpen && (
           <>
             <div className="container flex h-14 items-center justify-between">
-              <Link className="text-md flex items-center" href="/">
-                Svee UI
+              <Link href="/">
+                <DevlixLogo className="text-md" />
               </Link>
               <button className="md:hidden" onClick={toggleMenu}>
                 <span className="sr-only">Toggle menu</span>

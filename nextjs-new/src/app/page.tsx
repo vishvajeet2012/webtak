@@ -29,7 +29,7 @@ export default function Home() {
         <OurWorkSection />
         <PricingSection />
         <CtaSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
       </div>
       <Footer />
     </div>

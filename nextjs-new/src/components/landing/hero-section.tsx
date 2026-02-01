@@ -25,9 +25,15 @@ export function HeroSection() {
         presence.
       </p>
       <div className="-translate-y-4 animate-fade-in flex items-center justify-center gap-4 opacity-0 [--animation-delay:600ms]">
-        <MagicButton href="/contact">Book a Call</MagicButton>
-        <Button variant="outline" className="gap-1 rounded-lg" href="/about">
-          <span>Learn More</span>
+        <MagicButton className=" h-11 lg:h-12" href="/contact">
+          Book a Call
+        </MagicButton>
+        <Button
+          variant="ghost"
+          className="gap-1 h-12 hidden lg:flex rounded-lg"
+          href="/about"
+        >
+          <span className=" ">Learn More</span>
         </Button>
       </div>
 

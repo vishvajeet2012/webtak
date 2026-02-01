@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { BrandProvider } from "@/context/brand-context";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -8,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Svee UI - Next.js Startup Template",
+  title: "Devlix - Next.js Startup Template",
   description:
-    "Next.js Startup Template is a template for building Startup Applications. Built with Next.js, TailwindCSS, and Framer Motion.",
+    "Devlix Startup Template is a template for building Startup Applications. Built with Next.js, TailwindCSS, and Framer Motion.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        <BrandProvider>{children}</BrandProvider>
+      </body>
     </html>
   );
 }

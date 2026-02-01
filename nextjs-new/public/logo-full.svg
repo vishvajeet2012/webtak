@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <g transform="translate(4, 8) scale(1)">
+     <path d="M4 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5z" fill="black"/>
+     <path d="M12 5h2a7 7 0 0 1 0 14h-2V5z" fill="black"/>
+  </g>
+  <text x="36" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" letter-spacing="-0.5" fill="black">Devlix</text>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      path, text { fill: white; }
+    }
+  </style>
+</svg>
