@@ -9,9 +9,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Devlix - Next.js Startup Template",
-  description:
-    "Devlix Startup Template is a template for building Startup Applications. Built with Next.js, TailwindCSS, and Framer Motion.",
+  title: "Devlix",
+  description: "We build beautiful products without limits.",
+  manifest: "/manifest.json",
+  icons: [
+    { rel: "icon", url: "/devlix-icon.png" },
+    { rel: "apple-touch-icon", url: "/devlix-icon.png" },
+  ],
+};
+
+export const viewport = {
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
