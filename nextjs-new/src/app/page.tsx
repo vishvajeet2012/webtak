@@ -27,7 +27,7 @@ export default function Home() {
         <WhyChooseUsSection />
         <SphereMask />
         <OurWorkSection />
-        <PricingSection />
+        {/* <PricingSection /> */}
         <CtaSection />
         {/* <ContactSection /> */}
       </div>

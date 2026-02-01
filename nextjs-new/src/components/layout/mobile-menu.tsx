@@ -8,11 +8,10 @@ import Link from "next/link";
 import { DevlixLogo } from "@/components/ui/devlix-logo";
 
 const menuItems = [
-  { id: 1, label: "Features", href: "#" },
-  { id: 2, label: "Pricing", href: "#pricing" },
+  { id: 1, label: "Home", href: "/" },
+  { id: 2, label: "Work", href: "/work" },
   { id: 3, label: "About", href: "/about" },
-  { id: 4, label: "Team", href: "/team" },
-  { id: 5, label: "Contact", href: "/contact" },
+  { id: 4, label: "Contact", href: "/contact" },
 ];
 
 export function MobileMenu() {

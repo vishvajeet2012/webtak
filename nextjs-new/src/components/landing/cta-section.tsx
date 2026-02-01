@@ -53,13 +53,16 @@ const tiles3 = [tiles[1], tiles[4], tiles[0], tiles[3], tiles[2], tiles[5]];
 const tiles4 = [tiles[3], tiles[2], tiles[5], tiles[0], tiles[4], tiles[1]];
 
 export function CtaSection() {
-
   return (
     <section id="cta">
       <div className="py-14">
         <div className="flex w-full flex-col items-center justify-center">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-            <Marquee reverse className="-delay-[200ms] [--duration:10s]" repeat={5}>
+            <Marquee
+              reverse
+              className="-delay-[200ms] [--duration:10s]"
+              repeat={5}
+            >
               {tiles1.map((tile, idx) => (
                 <CtaCard key={`row1-${idx}`}>
                   <tile.icon className="size-full" />
@@ -75,7 +78,11 @@ export function CtaSection() {
                 </CtaCard>
               ))}
             </Marquee>
-            <Marquee reverse className="-delay-[200ms] [--duration:20s]" repeat={5}>
+            <Marquee
+              reverse
+              className="-delay-[200ms] [--duration:20s]"
+              repeat={5}
+            >
               {tiles1.map((tile, idx) => (
                 <CtaCard key={`row3-${idx}`}>
                   <tile.icon className="size-full" />
@@ -91,7 +98,11 @@ export function CtaSection() {
                 </CtaCard>
               ))}
             </Marquee>
-            <Marquee reverse className="-delay-[200ms] [--duration:20s]" repeat={5}>
+            <Marquee
+              reverse
+              className="-delay-[200ms] [--duration:20s]"
+              repeat={5}
+            >
               {tiles3.map((tile, idx) => (
                 <CtaCard key={`row5-${idx}`}>
                   <tile.icon className="size-full" />
@@ -121,7 +132,7 @@ export function CtaSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  href="#"
+                  href="/contact"
                   className="group mt-4 rounded-[2rem] px-6"
                 >
                   Get Started

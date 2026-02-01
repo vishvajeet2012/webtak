@@ -43,7 +43,9 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <DevlixLogo />
             </Link>
-            <p className="max-w-xs">UI Library for Design Engineers</p>
+            <p className="max-w-xs text-muted-foreground">
+              If it&apos;s slow, it&apos;s not ours
+            </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
             {footerNavs.map((nav) => (
