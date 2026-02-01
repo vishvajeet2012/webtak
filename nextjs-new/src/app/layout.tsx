@@ -11,15 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Devlix",
   description: "We build beautiful products without limits.",
-  manifest: "/manifest.json",
-  icons: [
-    { rel: "icon", url: "/devlix-icon.png" },
-    { rel: "apple-touch-icon", url: "/devlix-icon.png" },
-  ],
-};
-
-export const viewport = {
-  themeColor: "#000000",
+  icons: [{ rel: "icon", url: "/logo.svg" }],
 };
 
 export default function RootLayout({
