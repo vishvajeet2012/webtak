@@ -9,7 +9,7 @@ const menuItems = [
   { id: 4, label: "Contact", href: "/contact" },
 ];
 
-import { DevlixLogo } from "@/components/ui/devlix-logo";
+import { CrosDevLogo } from "@/components/ui/crosdev-logo";
 
 export function Header() {
   return (
@@ -17,7 +17,7 @@ export function Header() {
       <header className="fixed left-0 top-0 z-50 w-full animate-fade-in border-b border-transparent bg-background/5 backdrop-blur-md transition-all duration-300 hover:bg-background/80">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
-            <DevlixLogo />
+            <CrosDevLogo />
           </Link>
 
           {/* Desktop Navigation */}

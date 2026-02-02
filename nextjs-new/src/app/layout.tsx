@@ -9,46 +9,46 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devlix.com"), // Replace with actual domain when deployed
+  metadataBase: new URL("https://crosdev.vercel.app"),
   title: {
-    default: "Devlix - Digital Solutions",
-    template: "%s | Devlix",
+    default: "CrosDev - Digital Solutions",
+    template: "%s | CrosDev",
   },
   description:
     "We build beautiful products without limits. A premium web development agency specializing in Next.js and digital transformation.",
   keywords: [
-    "Devlix",
+    "CrosDev",
     "Web Development",
     "Next.js",
     "React",
     "Digital Agency",
     "Software Solutions",
   ],
-  authors: [{ name: "Devlix Team" }],
-  creator: "Devlix",
+  authors: [{ name: "CrosDev Team" }],
+  creator: "CrosDev",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://devlix.com",
-    title: "Devlix - Digital Solutions",
+    url: "https://crosdev.vercel.app",
+    title: "CrosDev - Digital Solutions",
     description:
-      "We build beautiful products without limits. Transform your digital presence with Devlix.",
-    siteName: "Devlix",
+      "We build beautiful products without limits. Transform your digital presence with CrosDev.",
+    siteName: "CrosDev",
     images: [
       {
         url: "/devlix-full.png",
         width: 1200,
         height: 630,
-        alt: "Devlix Agency",
+        alt: "CrosDev Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Devlix - Digital Solutions",
+    title: "CrosDev - Digital Solutions",
     description: "We build beautiful products without limits.",
     images: ["/devlix-full.png"],
-    creator: "@devlix",
+    creator: "@crosdev",
   },
   icons: [
     { rel: "icon", url: "/logo.svg" },

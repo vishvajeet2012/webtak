@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { DevlixLogo } from "@/components/ui/devlix-logo";
+import { CrosDevLogo } from "@/components/ui/crosdev-logo";
 
 const footerNavs = [
   {
@@ -41,7 +41,7 @@ export function Footer() {
         <div className="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <DevlixLogo />
+              <CrosDevLogo />
             </Link>
             <p className="max-w-xs text-muted-foreground">
               If it&apos;s slow, it&apos;s not ours
@@ -92,7 +92,7 @@ export function Footer() {
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <Link href="/" className="cursor-pointer">
-              Devlix
+              CrosDev
             </Link>
             . All Rights Reserved.
           </span>

@@ -5,7 +5,7 @@ import { AlignJustify, XIcon } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-import { DevlixLogo } from "@/components/ui/devlix-logo";
+import { CrosDevLogo } from "@/components/ui/crosdev-logo";
 
 const menuItems = [
   { id: 1, label: "Home", href: "/" },
@@ -48,8 +48,8 @@ export function MobileMenu() {
         {isOpen && (
           <>
             <div className="container flex h-14 items-center justify-between">
-              <Link href="/">
-                <DevlixLogo className="text-md" />
+              <Link href="/" onClick={toggleMenu}>
+                <CrosDevLogo className="text-md" />
               </Link>
               <button className="md:hidden" onClick={toggleMenu}>
                 <span className="sr-only">Toggle menu</span>

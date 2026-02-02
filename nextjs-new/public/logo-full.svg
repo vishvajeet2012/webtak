@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
-  <g transform="translate(4, 8) scale(1)">
-     <path d="M4 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5z" fill="black"/>
-     <path d="M12 5h2a7 7 0 0 1 0 14h-2V5z" fill="black"/>
-  </g>
-  <text x="36" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" letter-spacing="-0.5" fill="black">Devlix</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" fill="none">
+    <g transform="translate(0, 6) scale(1)">
+       <path d="M10.5 4.5L3 12L10.5 19.5" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+       <path d="M13.5 4.5L21 12L13.5 19.5" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+       <path d="M14 4L10 20" stroke="black" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    </g>
+  <text x="36" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" letter-spacing="-0.5" fill="black">CrosDev</text>
   <style>
     @media (prefers-color-scheme: dark) {
-      path, text { fill: white; }
+      path { stroke: white; }
+      text { fill: white; }
     }
   </style>
 </svg>

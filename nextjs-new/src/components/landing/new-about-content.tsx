@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 
 // --- Data & Content ---
 
-const AGENCY_NAME = "Devlix"; // Hardcoded as per instruction ("conext se dekh le likhin ontexrt use mt krna")
+const AGENCY_NAME = "CrosDev"; // Hardcoded as per instruction ("conext se dekh le likhin ontexrt use mt krna")
 
 const ourStoryContent = {
   heading: "Our Journey",
@@ -259,7 +259,7 @@ export function NewAboutPageContent() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            About Our Agency
+            About CrosDev
           </h1>
           <p className="text-gray-400">
             We&apos;re a team of web developers and digital specialists crafting

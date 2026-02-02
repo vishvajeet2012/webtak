@@ -12,7 +12,7 @@ export const useBrand = () => useContext(BrandContext);
 
 export const BrandProvider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <BrandContext.Provider value={{ appName: "Devlix" }}>
+    <BrandContext.Provider value={{ appName: "CrosDev" }}>
       {children}
     </BrandContext.Provider>
   );
