@@ -10,11 +10,11 @@ import { ContactSection } from "@/components/landing/contact-section";
 import { CtaSection } from "@/components/landing/cta-section";
 
 export const metadata = {
-  title: "Devlix - Premier Web Development & Digital Services",
+  title: "CrosDev - Premier Web Development & Digital Services",
   description:
-    "Devlix is a leading service-based company specializing in high-performance web development, mobile apps, and digital transformation solutions.",
+    "CrosDev is a leading service-based company specializing in high-performance web development, mobile apps, and digital transformation solutions.",
   keywords:
-    "devlix, web development, software agency, digital services, nextjs, react, mobile apps",
+    "crosdev, web development, software agency, digital services, nextjs, react, mobile apps",
 };
 
 export default function Home() {

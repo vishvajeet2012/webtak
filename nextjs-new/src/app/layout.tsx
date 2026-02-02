@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "CrosDev",
     images: [
       {
-        url: "/devlix-full.png",
+        url: "/opengraph-image", // Next.js auto-route
         width: 1200,
         height: 630,
         alt: "CrosDev Agency",
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CrosDev - Digital Solutions",
     description: "We build beautiful products without limits.",
-    images: ["/devlix-full.png"],
+    images: ["/opengraph-image"],
     creator: "@crosdev",
   },
   icons: [
     { rel: "icon", url: "/logo.svg" },
-    { rel: "apple-touch-icon", url: "/devlix-icon.png" },
+    // Auto-handled by icon.tsx
   ],
 };
 

@@ -6,7 +6,7 @@ interface BrandContextType {
   appName: string;
 }
 
-const BrandContext = createContext<BrandContextType>({ appName: "Devlix" });
+const BrandContext = createContext<BrandContextType>({ appName: "CrosDev" });
 
 export const useBrand = () => useContext(BrandContext);
 

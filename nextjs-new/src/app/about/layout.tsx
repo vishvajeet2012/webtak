@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Devlix",
+  title: "About Us | CrosDev",
   description:
-    "Learn about Devlix, our story, our team, and our mission to build beautiful digital products.",
+    "Learn about CrosDev, our story, our team, and our mission to build beautiful digital products.",
   openGraph: {
-    title: "About Devlix - Our Story & Team",
-    description: "Discover the people and philosophy behind Devlix.",
+    title: "About CrosDev - Our Story & Team",
+    description: "Discover the people and philosophy behind CrosDev.",
     images: ["/imgs/about/story.png"],
   },
 };
